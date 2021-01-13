@@ -1,0 +1,367 @@
+/****************************clear fix hack************************************/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /**********************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+    color:rgb(0, 0, 0);
+   
+  font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /* make fonts render better ?? */
+
+}
+.row{
+    max-width:1312px;
+    margin: 0 auto;
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.616)) , url(img/hogwarts.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+section{
+
+    padding: 80px 0;
+    
+}
+
+.dark_text_box
+{ 
+    
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 47%;
+      
+        transform: translate(-50%, -50%);
+    
+ 
+}
+h1,h2
+{
+   
+
+   
+  
+    /* font-weight: 300; */
+  /*   text-transform: uppercase; */
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}   
+h1{
+    font-family: 'Tangerine',Arial, Helvetica, sans-serif; 
+    margin-top:0;
+    margin-bottom: 20px;
+    font-size: 220%;
+  
+    color: #fff;
+}
+
+h2{
+
+    
+  
+    text-align: center;
+    font-size: 122%;
+margin-bottom: 26PX;
+     
+   
+}
+h2:after {
+    display: block;
+    height: 2px;
+    width: 15%;
+    content: "";
+    background-color:#27ae60 ;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    font-size: 110%;
+ margin-bottom: 15px;
+/*  text-align: center; */
+ /* text-align: center; */
+}
+
+/***********************butons *****************************************************************************/
+.btn:link,
+.btn:visited
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200PX;
+       transition: background-color 0.2s,border 0.2s,color 0.2s,transform 1s;
+       
+  
+
+
+}
+
+.btn_join  
+{
+    background-color: #27ae60;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn_learn:link,
+.btn_learn:visited
+{
+border: 1px solid  #27ae60;
+color: #27ae60;
+
+}
+
+  .btn:hover,
+.btn:active
+{
+    background-color:#17693a;
+    
+
+}
+
+.btn_learn:active,
+.btn_learn:hover
+{
+
+color: #fff;
+ 
+}
+
+/*********************************************************************************************************************************************/
+
+/********************the header and nav section************************************************************/
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main_nav{
+    float: right;
+    margin-top: 55px;
+
+   
+}
+.main_nav li
+{
+    display: inline-block ;
+    list-style: none;
+    margin-left: 40px;
+    
+}
+
+.main_nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+     font-size: 90%;
+     padding: 8px 0;
+    
+
+}
+
+.main_nav li a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background:  #27ae60;
+    margin-top: 10px;
+    transition: all 0.6s ;
+  }
+  .main_nav li a:hover::after {
+    width: 100%;
+  }
+
+
+/*************************************************************************************************************************************************************/
+
+/**************paragraphs**************************************************************************/
+.long_copy
+{
+    line-height: 145%;
+    
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 25px;
+    
+}
+.box p
+{
+   font-size: 90%;
+   line-height: 1.5;
+}
+.box{
+    padding: 1%;
+    text-align: center;
+}
+.box > img h3 p
+{
+    
+    text-align: center;
+}
+section.feautures_section
+{
+    padding: 7rem 0 ;
+    
+}
+/**********************************************************************************************/
+.box img
+{
+    height: 150px;
+    width: 49%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+ 
+}
+/**************photos section***********************************************************************************/
+.photos_section{
+    padding: 0;
+}
+.photos
+{
+    list-style: none;
+    width: 100%;
+}
+.photos li{
+    display: block;
+    float: right;
+    width: 25%;
+}
+.photos figure
+{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color:#000;
+}
+.photos img
+{
+    width: 100%;
+    height: 17rem;
+    transform: scale(1.15);
+    transition: transform 0.6s,opacity 0.6s;
+    opacity: 0.6;
+}
+
+.photos img:hover
+{
+    transform: scale(1.03);
+    opacity: 1.1;
+}
+
+/****************************** powers section *****************************************/
+section.powers{
+    background-color: #f4f6f8;
+    padding: 6% 0;
+    padding-bottom: 0;
+}
+.powers img {
+    width: 70%;
+    margin-left: 8rem;
+}
+.powers p{
+    word-spacing: 2px;
+    line-height: 1.5;
+    font-size: 86% ;
+    padding: 1rem 0;
+
+}
+
+/*****************************sign in ****************************************/
+.hidden {
+    display: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    background-color: #7f8c8d;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+    
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 0.2rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  .contact-form{
+      width: 100%;
+      margin: 0 auto;
+  }
+  input,select,textarea
+  {
+      width: 100%;
+      padding: 7px;
+      border-radius: 3px;
+  }
+
+
+/*************************footer***********************************************************************************************/
+footer{
+    background-color: #333;
+    padding: 1.5rem 0;
+    color: #888;
+}
+.bottom-container >a{
+
+text-decoration: none;
+padding: 0 1.7rem;
+color: #888;
+ 
+}
+footer div{
+    text-align: center;
+}
+footer p{
+    margin-top: 1rem;
+    font-size: 87%;
+  
+}
+/**************************************************************************************************************************/
