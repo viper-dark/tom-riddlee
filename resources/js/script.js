@@ -29,3 +29,26 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
+
+///////////////////////////////////////////////////
+///implementing smooth scroling
+
+const naviLinks=document.querySelectorAll(".navi");
+
+const scrolling=function(element){
+ 
+  element.preventDefault();
+  const href=this.getAttribute("href");
+  const offsetTop=document.querySelector(href).offsetTop;
+
+  scroll({
+    top:offsetTop,
+    behavior:"smooth"
+
+  });
+}
+
+
+naviLinks.forEach(function(element){
+  element.addEventListener("click",scrolling);
+});
